@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <title>Encriptador</title>
+        
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="logo">
+                
+                <h1><img src="Recursos/Logo.png" class="logo" alt="logo"></h1>
+    
+            </div>
+    
+        </header>
+
+        <main>
+            
+            <div class="form">
+                <textarea cols="77" rows="10" id="mensajeIngresado" class="input-padron" required placeholder="Ingrese el texo aqui"></textarea>
+                <!--<input type="text" id="mensajeIngresado" class="input-padron" required placeholder="Ingrese el texo aqui">-->
+
+                <h4 class="advertencia">Solo letras minúsculas y sin acentos</h4>
+
+                <input type="button" value="Encriptar" class="encriptar" onclick="encriptarTexto()">
+
+                <input type="button" value="Desencriptar" class="desencriptar" onclick="desencriptarTexto()">
+            </div>
+
+            <div class="caja" id="caja">
+
+                <div class="esconder" id="esconder">
+
+                    <img src="Recursos/Muñeco.png" alt="imagen" class="muneco">
+
+                    <h2 class="noMsj">Ningún mensaje fue encontrado</h2>
+                    <h3>Ingresa el texto que desees encriptar o desencriptar</h3>
+                </div>
+
+                <div class="contenedor-resultado">
+                    <p id="texto-resultado" class="output"></p>
+
+                    <input type="button" value="Copiar" id="copiar" class="copiarB" onclick="copiarTexto()">
+                </div>
+            </div>
+
+        </main>
+        
+        <footer>
+
+           <h2 class="textoFooter">Proyecto relaizado por <strong>Mitzi Nayeli Osorio Rios</strong></h2>
+
+           <a href="https://www.linkedin.com/in/mitzi-rios/">LinkedIn</a>
+
+        </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+</html>
