@@ -111,6 +111,10 @@ header{
     display: none;
 }
 
+.contenedor-resultado{
+    overflow-wrap: break-word;
+}
+
 .output{
     display: block;
     padding: 30px 30px;
