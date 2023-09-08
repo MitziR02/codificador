@@ -206,6 +206,7 @@ a{
         display: flex;
         max-width: 80%;
         align-items: center;
+        margin-left: 0;
     }
 }
 
@@ -214,6 +215,7 @@ a{
         display: flex;
         max-width: 80%;
         align-items: center;
+        margin-left: 0;
     }
 
     .btns{
