@@ -14,11 +14,18 @@ header{
 
 /*---------------------Body-Main---------------------*/
 
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 .form{
     margin-top: 20px;
-    margin-left: 240px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     height: 750px;
+    margin-left: 2rem;
 }
 
 .input-padron{
@@ -88,13 +95,17 @@ header{
 }
 
 .caja{
-    display: inline-block;
+    display: flex;
     background-color: white;
     height: 750px;
     width: 400px;
     vertical-align: top;
     border-radius: 32px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    margin-right: 2rem;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column
 }
 
 .esconder{
@@ -184,22 +195,42 @@ a{
 
 /*Configuracion para deispositivos moviles PENDIENTE*/
 
-@media screen and (max-width:480px) {
-    h1{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    nav{
-        position: static;
-    }
-
-    .caja, .contenido, .mapa-contenido, .video-contenido, .video, .lideres{
-        width: auto;
-    }
-
-    .listaLideres, .imgErwinLista{
+@media screen and (max-width:1170px) {
+    main{
         width: 100%;
-        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        display: flex;
+        max-width: 80%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .form{
+        display: flex;
+        max-width: 80%;
+        align-items: center;
+    }
+
+    .btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .encriptar{
+        margin: .5rem;
+    }
+
+    .desencriptar{
+        margin: .5rem;
+    }
+
+    .caja{
+        margin: 1rem;
     }
 }
